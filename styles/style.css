@@ -8,6 +8,9 @@
   background-size: cover; /* Делаем так, чтобы изображение покрывало весь элемент */
   background-repeat: no-repeat; /* Убираем повторение изображения */
   background-attachment: fixed; /* Чтобы фон оставался на месте при прокрутке страницы. */
+  font-family: var(--font-text);
+  font-size: var(--font-size);
+  font-weight: var(--font-norm);
 }
 
 .header {
@@ -18,8 +21,10 @@
 
 .text-cover {
   font-size: 157px;
-  font-weight: bold;
   line-height: 83%;
+  color: var(--cover-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
+  font-weight: var(--font-bold);
 }
 
 .text-container {
