@@ -9,3 +9,19 @@
   background-repeat: no-repeat; /* Убираем повторение изображения */
   background-attachment: fixed; /* Чтобы фон оставался на месте при прокрутке страницы. */
 }
+
+.header {
+  height: 100vh;
+  min-height: 768px;
+  display: grid;
+}
+
+.text-cover {
+  font-size: 157px;
+  font-weight: bold;
+  line-height: 83%;
+}
+
+.text-container {
+
+}
