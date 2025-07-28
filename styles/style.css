@@ -67,3 +67,46 @@
   color: var(--text-block-color);
 
 }
+
+/* Стилизация секции why-hard */
+
+.content-section {
+  background-color: var(--bg-color);
+  display: grid;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: var(--font-size);
+  font-weight: var(--font-bold);
+  color: var(--text-bg-block-color);
+}
+
+.content-title {
+  font-size: var(--font-size);
+  font-weight: var(--font-bold);
+  color: var(--text-block-color);
+  background-color: var(--text-bg-block-color);
+  margin-bottom: 10px;
+}
+
+.content-description {
+  color: var(--text-desc);
+}
+
+.why-hard {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 60px;
+}
+
+.functionary {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  margin-bottom: 20px;
+}
+
+.dopamine {  
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
