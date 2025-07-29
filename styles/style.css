@@ -96,7 +96,7 @@
 
 .why-hard {
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, max-content);
   padding-top: 60px;
 }
 
@@ -108,5 +108,35 @@
 
 .dopamine {  
   grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+/* Стилизация для секции Reduce-Concentration */
+
+.reduce-concentration {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, max-content);
+  gap: 20px;
+  padding-top: 80px;
+}
+
+.what-reduce {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  max-height: 47px;
+}
+
+.how-function {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.food {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.device {
+  grid-column: 3 / 4;
   grid-row: 2 / 3;
 }
