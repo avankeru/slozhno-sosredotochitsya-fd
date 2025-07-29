@@ -140,3 +140,49 @@
   grid-column: 3 / 4;
   grid-row: 2 / 3;
 }
+
+/* Стилизация для секции Concentration-Better */
+
+.concentration-better  {
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, max-content);
+  gap: 20px;
+  padding-top: 80px;
+}
+
+.reduce-better  {
+  grid-column: 1 / 2;
+  grid-row: 1 / 7;
+  max-width: 315px;
+}
+
+.five-rules  {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin: 0;
+}
+
+.sky-cloud  {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.music-online  {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.walking  {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.enjoy-meal  {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+.reading {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+}
