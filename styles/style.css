@@ -186,3 +186,50 @@
   grid-column: 2 / 3;
   grid-row: 6 / 7;
 }
+
+/* Стилизация для секции Gallery-Pictures */
+
+.gallery-pictures {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 24px repeat(3, max-content);
+  gap: 20px;
+  padding-top: 80px;
+}
+
+.maybe-pictures {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-color: var(--text-bg-block-color);
+  color: var(--text-block-color);
+}
+
+.sunset {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.tape {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+.books {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.ice-cream {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
+
+.street {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+}
+
+.gallery-pictures img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
