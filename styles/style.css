@@ -32,15 +32,17 @@
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
-  color: var(--text-bg-block-color);
-  font-weight: var(--font-norm);
-  line-height: var(--font-size);
+  color: var(--text-accent);
+  font-weight: var(
+  --font-norm);
+  line-height: var(
+  --font-size);
   padding: 1.5px 13px;
   text-transform: lowercase;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--text-bg-block-color);
+  border: 1px solid var(--text-accent);
 }
 
 
@@ -104,7 +106,7 @@
 .section-title {
   font-size: var(--font-size);
   font-weight: var(--font-bold);
-  color: var(--text-bg-block-color);
+  color: var(--text-accent);
 }
 
 .content-title {
@@ -113,6 +115,10 @@
   color: var(--text-block-color);
   background-color: var(--text-bg-block-color);
   margin-bottom: 10px;
+}
+
+.reset {
+  font-weight: var(--font-norm);
 }
 
 .content-description {
@@ -287,8 +293,9 @@
   width: 25px; /* Ширина элемента */
   height: 25px; /* Высота элемента */
   background-color: transparent;
-  border-left: 2px solid var(--text-bg-block-color); /* Сплошная граница */
-  border-bottom: 2px solid var(--text-bg-block-color);
+  border-left: 1px solid var(--text-accent); /* Сплошная граница */
+  border-bottom: 1px solid var(
+  --text-accent);
   left: 20px;
   bottom: 20px;
 }
@@ -298,8 +305,9 @@
   width: 25px; /* Ширина элемента */
   height: 25px; /* Высота элемента */
   background-color: transparent;
-  border-top: 2px solid var(--text-bg-block-color); /* Сплошная граница */
-  border-right: 2px solid var(--text-bg-block-color);
+  border-top: 1px solid var(--text-accent); /* Сплошная граница */
+  border-right: 1px solid var(
+  --text-accent);
   right: 20px;
   top: 20px;
 }
