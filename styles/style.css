@@ -18,6 +18,7 @@
   height: 100vh;
   min-height: 768px;
   display: grid;
+  position: relative;
 }
 
 .header__theme-menu-list {
@@ -66,6 +67,29 @@
   font-weight: var(--font-bold);
   color: var(--text-block-color);
 
+}
+
+.the-recording {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  top: 20px;
+  right: 29px;
+}
+
+.recording {
+  text-transform: uppercase;
+  color: var(--shadow-color);
+  line-height: 25px;
+}
+
+.the-lights {
+  width: 9px;
+  height: 9px;
+  background-color: var(--text-bg-block-color);
+  border-radius: 100%;
+  box-shadow: 0 0 4px 2px var(--text-bg-block-color);
 }
 
 /* Стилизация секции why-hard */
@@ -194,6 +218,7 @@
   grid-template-rows: 24px repeat(3, max-content);
   gap: 20px;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .maybe-pictures {
@@ -233,3 +258,49 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Стилизация для секции Footer */
+
+.footer {
+  position: relative;
+  background-color: var(--bg-color);
+  display: flex;
+  min-height: 768px;
+  justify-content: center;
+}
+
+.footer-cover {
+  font-size: 157px;
+  line-height: 83%;
+  color: var(--cover-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
+  font-weight: var(--font-bold);
+  justify-self: flex-start;
+  height: max-content;
+  align-self: center;
+}
+
+
+.decorative-corners-tall {
+  position: absolute;
+  width: 25px; /* Ширина элемента */
+  height: 25px; /* Высота элемента */
+  background-color: transparent;
+  border-left: 2px solid var(--text-bg-block-color); /* Сплошная граница */
+  border-bottom: 2px solid var(--text-bg-block-color);
+  left: 20px;
+  bottom: 20px;
+}
+
+.decorative-corners-head {
+  position: absolute;
+  width: 25px; /* Ширина элемента */
+  height: 25px; /* Высота элемента */
+  background-color: transparent;
+  border-top: 2px solid var(--text-bg-block-color); /* Сплошная граница */
+  border-right: 2px solid var(--text-bg-block-color);
+  right: 20px;
+  top: 20px;
+}
+
+
