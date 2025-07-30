@@ -19,6 +19,7 @@
   min-height: 768px;
   display: grid;
   position: relative;
+  grid-template-rows: 1fr 2fr 1.1fr;
 }
 
 .header__theme-menu-list {
@@ -52,6 +53,7 @@
   justify-self: flex-start;
   height: max-content;
   align-self: center;
+  margin-top: 20px;
 }
 
 .text-container {
@@ -66,7 +68,6 @@
   font-size: var(--font-size);
   font-weight: var(--font-bold);
   color: var(--text-block-color);
-
 }
 
 .the-recording {
@@ -218,7 +219,7 @@
   grid-template-rows: 24px repeat(3, max-content);
   gap: 20px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .maybe-pictures {
