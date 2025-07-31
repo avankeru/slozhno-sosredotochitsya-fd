@@ -2,7 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background-color: var(--bg-color); /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
+  background-color: var(
+    --bg-color
+  ); /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
   background-image: var(--bg-image); /* Фоновое изображение страницы */
   background-position: center; /* Центрируем изображение */
   background-size: cover; /* Делаем так, чтобы изображение покрывало весь элемент */
@@ -32,10 +34,8 @@
   background-color: transparent;
   border: none;
   color: var(--text-accent);
-  font-weight: var(
-  --font-norm);
-  line-height: var(
-  --font-size);
+  font-weight: var(--font-norm);
+  line-height: var(--font-size);
   padding: 1.5px 13px;
   text-transform: lowercase;
 }
@@ -43,7 +43,6 @@
 .header__theme-menu-button_active {
   border: 1px solid var(--text-accent);
 }
-
 
 .text-cover {
   font-size: 157px;
@@ -136,7 +135,7 @@
   grid-row: 1 / 2;
 }
 
-.dopamine {  
+.dopamine {
   grid-column: 2 / 4;
   grid-row: 2 / 3;
 }
@@ -172,41 +171,41 @@
 
 /* Стилизация для секции Concentration-Better */
 
-.concentration-better  {
+.concentration-better {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(6, max-content);
   gap: 20px;
   padding-top: 80px;
 }
 
-.reduce-better  {
+.reduce-better {
   grid-column: 1 / 2;
   grid-row: 1 / 7;
   max-width: 315px;
 }
 
-.five-rules  {
+.five-rules {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   margin: 0;
 }
 
-.sky-cloud  {
+.sky-cloud {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
-.music-online  {
+.music-online {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
 
-.walking  {
+.walking {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
 
-.enjoy-meal  {
+.enjoy-meal {
   grid-column: 2 / 3;
   grid-row: 5 / 6;
 }
@@ -285,15 +284,13 @@
   align-self: center;
 }
 
-
 .decorative-corners-tall {
   position: absolute;
   width: 25px; /* Ширина элемента */
   height: 25px; /* Высота элемента */
   background-color: transparent;
   border-left: 1px solid var(--text-accent); /* Сплошная граница */
-  border-bottom: 1px solid var(
-  --text-accent);
+  border-bottom: 1px solid var(--text-accent);
   left: 20px;
   bottom: 20px;
 }
@@ -304,15 +301,12 @@
   height: 25px; /* Высота элемента */
   background-color: transparent;
   border-top: 1px solid var(--text-accent); /* Сплошная граница */
-  border-right: 1px solid var(
-  --text-accent);
+  border-right: 1px solid var(--text-accent);
   right: 20px;
   top: 20px;
 }
 
-
 @media (width < 1024px) {
-
   .header {
     grid-template-rows: 1fr 1.4fr 1fr;
   }
@@ -500,7 +494,6 @@
   }
 
   .walking {
-
     grid-column: 1 / -1;
     grid-row: 5 / 6;
   }
@@ -570,4 +563,3 @@
     bottom: 20px;
   }
 }
-

@@ -10,11 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-light.png); /* Переменная заднего фона */
-  --bg-color: #FFF1F7; /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
-  --cover-color: #FFC2E6; /* Цвет no focus */
-  --shadow-color: #FF8DCB; /* Цвет тени no focus */
+  --bg-color: #fff1f7; /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
+  --cover-color: #ffc2e6; /* Цвет no focus */
+  --shadow-color: #ff8dcb; /* Цвет тени no focus */
   --text-block-color: #353430; /* Цвет текста с фоном */
-  --text-bg-block-color: #FF8DCB; /* Цвет блока текста */
+  --text-bg-block-color: #ff8dcb; /* Цвет блока текста */
   --text-desc: #353430;
   --text-accent: #353430;
 

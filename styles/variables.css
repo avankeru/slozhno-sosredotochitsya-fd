@@ -3,15 +3,15 @@
   и их переопределение под различные устройства
 */
 :root {
-  --font-text: 'IBM Plex mono', sans-serif;
+  --font-text: "IBM Plex mono", sans-serif;
   --font-size: 18px;
   --font-norm: normal;
   --font-bold: bold;
   --text-height: 23.4px;
   --bg-image: url(../images/cover-image-dark.png); /* Переменная заднего фона */
   --bg-color: #000028; /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
-  --cover-color: #DB00FF; /* Цвет no focus */
-  --shadow-color: #FF0070; /* Цвет тени no focus */
+  --cover-color: #db00ff; /* Цвет no focus */
+  --shadow-color: #ff0070; /* Цвет тени no focus */
   --text-block-color: #000028; /* Цвет текста с фоном */
-  --text-bg-block-color: #FF0070; /* Цвет блока текста */
+  --text-bg-block-color: #ff0070; /* Цвет блока текста */
 }
