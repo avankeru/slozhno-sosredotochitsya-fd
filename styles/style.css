@@ -176,8 +176,9 @@
 .concentration-better {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(6, max-content);
-  gap: 20px;
+  row-gap: 20px;
   padding-top: 80px;
+  column-gap: 12px;
 }
 
 .reduce-better {
@@ -366,6 +367,10 @@
   .device {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
+  }
+
+  .concentration-better {
+    column-gap: 20px;
   }
 
   .footer {
