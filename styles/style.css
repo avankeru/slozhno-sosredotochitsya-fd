@@ -2,9 +2,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background-color: var(
-    --bg-color
-  ); /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
   background-image: var(--bg-image); /* Фоновое изображение страницы */
   background-position: center; /* Центрируем изображение */
   background-size: cover; /* Делаем так, чтобы изображение покрывало весь элемент */
@@ -16,7 +13,12 @@
   line-height: var(--text-height);
 }
 
+.main {
+  background-color: var(--bg-color); /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
+}
+
 .header {
+  min-height: 668px;
   height: 100vh;
   display: grid;
   position: relative;
@@ -35,17 +37,17 @@
   border: none;
   color: var(--text-accent);
   font-weight: var(--font-norm);
-  line-height: var(--font-size);
   padding: 1.5px 13px;
   text-transform: lowercase;
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--text-accent);
+  pointer-events: none;
 }
 
 .text-cover {
-  font-size: 157px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
   color: var(--cover-color);
   text-shadow: 4px 4px 0 var(--shadow-color);
@@ -96,7 +98,6 @@
 /* Стилизация секции why-hard */
 
 .content-section {
-  background-color: var(--bg-color);
   display: grid;
   padding: 0 20px;
 }
@@ -127,7 +128,8 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, max-content);
   padding-top: 60px;
-  gap: 20px;
+  row-gap: 20px;
+  column-gap: 20px;
 }
 
 .functionary {
@@ -269,12 +271,12 @@
   position: relative;
   background-color: var(--bg-color);
   display: flex;
-  min-height: 768px;
+  height: 100vh;
   justify-content: center;
 }
 
 .footer-cover {
-  font-size: 157px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   line-height: 83%;
   color: var(--cover-color);
   text-shadow: 2px 2px 0 var(--shadow-color);
@@ -321,16 +323,23 @@
     flex-direction: column;
     align-items: flex-end;
     margin-right: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .text-cover {
-    font-size: 120px;
     margin: 0;
+  }
+
+  .text-container {
+    max-width: 364px;
   }
 
   .text-title {
     max-width: 364px;
+  }
+
+  .why-hard {
+    column-gap: 40px;
   }
 
   .reduce-concentration {
@@ -363,9 +372,6 @@
     min-height: 1024px;
   }
 
-  .footer-cover {
-    font-size: 120px;
-  }
 }
 
 @media (width < 768px) {
@@ -391,7 +397,7 @@
   }
 
   .text-cover {
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-left: 10px;
   }
 
@@ -551,15 +557,7 @@
   }
 
   .footer-cover {
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     padding-bottom: 20px;
-  }
-
-  .footer-head {
-    top: 0;
-  }
-
-  .footer-tall {
-    bottom: 20px;
   }
 }

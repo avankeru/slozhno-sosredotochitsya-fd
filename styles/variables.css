@@ -14,4 +14,6 @@
   --shadow-color: #ff0070; /* Цвет тени no focus */
   --text-block-color: #000028; /* Цвет текста с фоном */
   --text-bg-block-color: #ff0070; /* Цвет блока текста */
+  --text-desc: #f1b2ce;
+  --text-accent: #ff0070;
 }
