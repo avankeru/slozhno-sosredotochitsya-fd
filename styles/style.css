@@ -41,6 +41,15 @@
   text-transform: lowercase;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--shadow-border);
+}
+
+.header__theme-menu-button:focus-visible {
+  border: none;
+  border-bottom: 1px solid var(--text-accent);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--text-accent);
   pointer-events: none;
@@ -123,6 +132,21 @@
 .content-description {
   color: var(--text-desc);
 }
+
+.linker {
+  text-shadow: 2px 2px 0 var(--shadow-color); 
+  text-decoration: none;
+}
+
+.linker:hover {
+  text-decoration: underline;
+}
+
+.linker:focus-visible {
+  border: 1px solid var(--text-desc);
+}
+
+
 
 .why-hard {
   grid-template-columns: repeat(3, 1fr);
