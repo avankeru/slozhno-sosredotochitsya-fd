@@ -23,3 +23,21 @@
     display: none;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --bg-image: url(../images/cover-image-light.png); /* Переменная заднего фона */
+  --bg-color: #fff1f7; /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
+  --cover-color: #ffc2e6; /* Цвет no focus */
+  --shadow-color: #ff8dcb; /* Цвет тени no focus */
+  --text-block-color: #353430; /* Цвет текста с фоном */
+  --text-bg-block-color: #ff8dcb; /* Цвет блока текста */
+  --text-desc: #353430;
+  --text-accent: #353430;
+  --shadow-border: rgba(53, 52, 48, 0.4);
+
+  .the-recording {
+    display: none;
+  }
+  }
+}
