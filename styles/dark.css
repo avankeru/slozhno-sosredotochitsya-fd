@@ -17,4 +17,8 @@
   --text-bg-block-color: #ff0070; /* Цвет блока текста */
   --text-desc: #f1b2ce;
   --text-accent: #ff0070;
+
+    .the-recording {
+      visibility: visible;
+  }
 }

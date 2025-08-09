@@ -20,7 +20,7 @@
   --shadow-border: rgba(53, 52, 48, 0.4);
 
   .the-recording {
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -37,7 +37,7 @@
   --shadow-border: rgba(53, 52, 48, 0.4);
 
   .the-recording {
-    display: none;
+    visibility: hidden;
   }
   }
 }
