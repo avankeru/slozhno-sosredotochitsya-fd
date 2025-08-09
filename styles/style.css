@@ -14,10 +14,6 @@
   line-height: var(--text-height);
 }
 
-.main {
-  background-color: var(--bg-color); /* Фоновый цвет, который будет совпадать с основным тоном фонового изображения страницы. */
-}
-
 .header {
   min-height: 668px;
   height: 100vh;
@@ -268,7 +264,6 @@
 
 .footer {
   position: relative;
-  background-color: var(--bg-color);
   display: flex;
   height: 100vh;
   justify-content: center;
